@@ -1,34 +1,50 @@
-# DevOps Portfolio
+# DevOps Demo App 🚀
 
-Hands-on DevOps projects demonstrating Docker, Kubernetes, CI/CD, GitHub Actions, Linux, cloud technologies, and automation.
+A complete DevOps CI/CD project demonstrating containerization, automated Docker image builds, Docker Hub publishing, and Kubernetes deployment using GitHub Actions.
 
-## Projects
+## 🏗️ Architecture
 
-### 1. DevOps Demo Application
+Developer
+   ↓
+GitHub Repository
+   ↓
+GitHub Actions
+   ↓
+Docker Build
+   ↓
+Docker Hub
+   ↓
+Kubernetes / Minikube
+   ↓
+Running Application
 
-A containerized Python web application demonstrating the fundamentals of a DevOps workflow.
+## 🛠️ Technologies
 
-**Technologies:**
 - Python / Flask
 - Docker
+- Docker Hub
 - Kubernetes
+- Minikube
+- kubectl
 - GitHub Actions
-- CI/CD
+- Git / GitHub
 
-**Project:** [`projects/devops-demo-app`](./projects/devops-demo-app)
+## 📁 Project Structure
 
-### 2. Wisecow Deployment
-
-Containerized application deployment demonstrating Docker, Kubernetes, and GitHub Actions automation.
-
-**Technologies:**
-- Docker
-- Kubernetes
-- GitHub Actions
-- CI/CD
-
----
-
-## About
-
-This repository contains hands-on projects built to develop and demonstrate practical DevOps engineering skills, including containerization, orchestration, automation, CI/CD, and cloud technologies.
+```text
+devops-portfolio/
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yml
+│
+├── projects/
+│   └── devops-demo-app/
+│       ├── app/
+│       │   └── app.py
+│       ├── Dockerfile
+│       ├── requirements.txt
+│       └── kubernetes/
+│           ├── deployment.yaml
+│           └── service.yaml
+│
+└── README.md
